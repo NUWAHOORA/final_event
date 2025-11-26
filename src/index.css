@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    /* UCU Brand Colors - Burgundy/Red Theme */
+    --ucu-burgundy: 0 65% 35%;
+    --ucu-burgundy-light: 0 65% 45%;
+    --ucu-burgundy-dark: 0 70% 25%;
+    --ucu-red: 0 75% 50%;
+    --ucu-gold: 45 100% 50%;
+    
+    /* Admin Theme - UCU Burgundy */
+    --admin-primary: 0 65% 35%;
+    --admin-primary-light: 0 65% 45%;
+    --admin-accent: 0 75% 55%;
+    --admin-bg: 0 10% 8%;
+    --admin-card: 0 8% 15%;
+
+    /* Staff Theme - UCU Red */
+    --staff-primary: 0 75% 45%;
+    --staff-primary-light: 0 75% 55%;
+    --staff-accent: 15 85% 60%;
+    --staff-bg: 0 5% 10%;
+    --staff-card: 0 5% 18%;
+
+    /* Student Theme - Light with UCU Accents */
+    --student-primary: 0 65% 40%;
+    --student-primary-light: 0 65% 50%;
+    --student-accent: 0 75% 55%;
+    --student-bg: 0 5% 98%;
+    --student-card: 0 0% 100%;
+
+    --primary: 0 65% 35%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 5% 96%;
+    --secondary-foreground: 0 0% 15%;
+
+    --muted: 0 5% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 0 75% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 10% 90%;
+    --input: 0 10% 90%;
+    --ring: 0 65% 35%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --radius: 0.75rem;
+    
+    /* UCU Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--ucu-burgundy)), hsl(var(--ucu-red)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--ucu-red)), hsl(var(--ucu-gold)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--ucu-burgundy-dark)), hsl(var(--ucu-burgundy)));
+    
+    /* Shadows with UCU colors */
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.3);
+    --shadow-card: 0 4px 6px -1px hsl(var(--primary) / 0.1), 0 2px 4px -2px hsl(var(--primary) / 0.05);
+    --shadow-glow: 0 0 40px hsl(var(--ucu-red) / 0.2);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 10% 8%;
+    --foreground: 0 5% 98%;
+
+    --card: 0 8% 15%;
+    --card-foreground: 0 5% 98%;
+
+    --popover: 0 8% 15%;
+    --popover-foreground: 0 5% 98%;
+
+    --primary: 0 75% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 8% 20%;
+    --secondary-foreground: 0 5% 98%;
+
+    --muted: 0 8% 20%;
+    --muted-foreground: 0 5% 65%;
+
+    --accent: 0 80% 60%;
+    --accent-foreground: 0 10% 8%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 8% 20%;
+    --input: 0 8% 20%;
+    --ring: 0 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
