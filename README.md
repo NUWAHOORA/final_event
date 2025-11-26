@@ -13,4 +13,12 @@ User authentication (Admin, Staff)
 
 Resource allocation (projectors, halls, equipment)
 
+**Logins**
+Admin: nuwahoorabrian02@gmail.com
+password: KBA7674@bryan
+Stusent: osbert@gmail.com
+password:1234567890
+staff:staff@gmail.com
+password:Staff123!
+
 Event calendar (daily/weekly/monthly views
