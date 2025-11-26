@@ -16,7 +16,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/final_event">
         <Routes>
           <Route path="/" element={<Auth />} />
           <Route path="/auth" element={<Auth />} />
